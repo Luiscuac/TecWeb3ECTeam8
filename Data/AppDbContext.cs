@@ -9,7 +9,7 @@ namespace TecWeb3ECTeam8.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Event> Books => Set<Event>();
+        public DbSet<Event> Events => Set<Event>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

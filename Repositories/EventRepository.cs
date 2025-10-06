@@ -1,6 +1,7 @@
 ﻿using System;
 using TecWeb3ECTeam8.Models;
-
+using TecWeb3ECTeam8.Data;
+using Microsoft.EntityFrameworkCore;
 namespace TecWeb3ECTeam8.Repositories
 {
     public class EventRepository : IEventRepository

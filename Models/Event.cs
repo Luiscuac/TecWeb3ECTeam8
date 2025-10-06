@@ -1,0 +1,11 @@
+﻿using System.ComponentModel.DataAnnotations;
+namespace TecWeb3ECTeam8.Models
+{
+    public class Event
+    {
+        public Guid Id { get; set; } 
+        public string Title { get; set; } = string.Empty;
+        public DateTime Date { get; set; }
+        public int capacity { get; set; }
+    }
+}

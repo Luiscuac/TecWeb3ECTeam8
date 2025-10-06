@@ -20,4 +20,19 @@ public class AppDbContext : DbContext
 
         base.OnModelCreating(modelBuilder);
     }
+
+    public DbSet<Ticket> Tickets => Set<Ticket>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Ticket>(b =>
+        {
+            b.HasKey(x => x.Id);
+            b.Property(x => x.notes).IsRequired().HasMaxLength(200);
+
+        });
+        base.OnModelCreating(modelBuilder);
+    }
+
+
 }

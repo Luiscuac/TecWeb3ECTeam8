@@ -13,6 +13,7 @@ public class AppDbContext : DbContext
 
     public DbSet<Guest> Guests => Set<Guest>();
     public DbSet<Event> Events => Set<Event>();
+    public DbSet<Ticket> Tickets => Set<Ticket>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -29,6 +30,13 @@ public class AppDbContext : DbContext
             e.Property(x => x.Title).IsRequired().HasMaxLength(200);
             e.Property(x => x.Date).IsRequired();
             e.Property(x => x.Capacity).IsRequired();
+        });
+
+        modelBuilder.Entity<Ticket>(t =>
+        {
+            t.HasKey(x => x.Id);
+            t.Property(x => x.notes).IsRequired().HasMaxLength(200);
+
         });
 
         base.OnModelCreating(modelBuilder);

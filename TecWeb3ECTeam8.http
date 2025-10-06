@@ -1,0 +1,6 @@
+@TecWeb3ECTeam8_HostAddress = http://localhost:5187
+
+GET {{TecWeb3ECTeam8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

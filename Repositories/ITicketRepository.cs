@@ -1,6 +1,6 @@
-﻿using apiwithdb.Models;
+﻿using TecWebGrupo8.Models;
 
-namespace apiwithdb.Repositories
+namespace TecWebGrupo8.Repositories
 {
     public interface ITicketRepository
     {

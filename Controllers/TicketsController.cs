@@ -1,8 +1,8 @@
-﻿using apiwithdb.Models.dtos;
-using apiwithdb.Services;
+﻿using TecWebGrupo8.Models.dtos;
+using TecWebGrupo8.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace apiwithdb.Controllers
+namespace TecWebGrupo8.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

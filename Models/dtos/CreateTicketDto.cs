@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-namespace apiwithdb.Models.dtos
+namespace TecWebGrupo8.Models.dtos
 {
     public class CreateTicketDto
     {

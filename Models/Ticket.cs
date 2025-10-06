@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace apiwithdb.Models
+namespace TecWebGrupo8.Models
 {
     public class Ticket
     {

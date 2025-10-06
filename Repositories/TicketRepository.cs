@@ -1,8 +1,8 @@
-﻿using apiwithdb.Data;
-using apiwithdb.Models;
+﻿using TecWebGrupo8.Data;
+using TecWebGrupo8.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
-namespace apiwithdb.Repositories
+namespace TecWebGrupo8.Repositories
 {
     public class TicketRepository: ITicketRepository
     {

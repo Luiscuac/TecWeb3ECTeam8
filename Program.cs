@@ -13,6 +13,12 @@ builder.Services.AddDbContext<TecWebGrupo8.Data.AppDbContext>(options =>
 builder.Services.AddScoped<TecWebGrupo8.Repositories.IEventRepository, TecWebGrupo8.Repositories.EventRepository>();
 builder.Services.AddScoped<TecWebGrupo8.Services.IEventService, TecWebGrupo8.Services.EventService>();
 
+builder.Services.AddScoped<TecWebGrupo8.Repositories.IGuestRepository, TecWebGrupo8.Repositories.GuestRepository>();
+builder.Services.AddScoped<TecWebGrupo8.Services.IGuestService, TecWebGrupo8.Services.GuestService>();
+
+builder.Services.AddScoped<TecWebGrupo8.Repositories.ITicketRepository, TecWebGrupo8.Repositories.TickerRepository>();
+builder.Services.AddScoped<TecWebGrupo8.Services.ITicketService, TecWebGrupo8.Services.TicketService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

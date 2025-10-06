@@ -1,0 +1,20 @@
+﻿services:
+  db:
+    image: postgres:16
+    container_name: team8_pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: team8db
+      POSTGRES_USER: team8user
+      POSTGRES_PASSWORD: supersecret
+    ports:
+      - "5432:5432"
+    volumes:
+      - team8_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U team8user -d team8db"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  books_data:
